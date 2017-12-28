@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		476DBD771FF51AE9008D02D7 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 476DBD761FF51AE9008D02D7 /* main.swift */; };
 		476DBD7E1FF51ECB008D02D7 /* MyInt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 476DBD7D1FF51ECB008D02D7 /* MyInt.swift */; };
+		476DBD861FF52506008D02D7 /* KaratsubaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 476DBD851FF52506008D02D7 /* KaratsubaTests.swift */; };
+		476DBD8B1FF52578008D02D7 /* MyInt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 476DBD7D1FF51ECB008D02D7 /* MyInt.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -27,10 +29,20 @@
 		476DBD731FF51AE9008D02D7 /* KaratsubaMultiplication */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = KaratsubaMultiplication; sourceTree = BUILT_PRODUCTS_DIR; };
 		476DBD761FF51AE9008D02D7 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		476DBD7D1FF51ECB008D02D7 /* MyInt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyInt.swift; sourceTree = "<group>"; };
+		476DBD831FF52506008D02D7 /* KaratsubaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KaratsubaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		476DBD851FF52506008D02D7 /* KaratsubaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KaratsubaTests.swift; sourceTree = "<group>"; };
+		476DBD871FF52506008D02D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		476DBD701FF51AE9008D02D7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		476DBD801FF52506008D02D7 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -44,6 +56,7 @@
 			isa = PBXGroup;
 			children = (
 				476DBD751FF51AE9008D02D7 /* KaratsubaMultiplication */,
+				476DBD841FF52506008D02D7 /* KaratsubaTests */,
 				476DBD741FF51AE9008D02D7 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -52,6 +65,7 @@
 			isa = PBXGroup;
 			children = (
 				476DBD731FF51AE9008D02D7 /* KaratsubaMultiplication */,
+				476DBD831FF52506008D02D7 /* KaratsubaTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -63,6 +77,15 @@
 				476DBD7D1FF51ECB008D02D7 /* MyInt.swift */,
 			);
 			path = KaratsubaMultiplication;
+			sourceTree = "<group>";
+		};
+		476DBD841FF52506008D02D7 /* KaratsubaTests */ = {
+			isa = PBXGroup;
+			children = (
+				476DBD851FF52506008D02D7 /* KaratsubaTests.swift */,
+				476DBD871FF52506008D02D7 /* Info.plist */,
+			);
+			path = KaratsubaTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -85,6 +108,23 @@
 			productReference = 476DBD731FF51AE9008D02D7 /* KaratsubaMultiplication */;
 			productType = "com.apple.product-type.tool";
 		};
+		476DBD821FF52506008D02D7 /* KaratsubaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 476DBD881FF52506008D02D7 /* Build configuration list for PBXNativeTarget "KaratsubaTests" */;
+			buildPhases = (
+				476DBD7F1FF52506008D02D7 /* Sources */,
+				476DBD801FF52506008D02D7 /* Frameworks */,
+				476DBD811FF52506008D02D7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KaratsubaTests;
+			productName = KaratsubaTests;
+			productReference = 476DBD831FF52506008D02D7 /* KaratsubaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -96,6 +136,10 @@
 				ORGANIZATIONNAME = "Artem Babakhaniants";
 				TargetAttributes = {
 					476DBD721FF51AE9008D02D7 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					476DBD821FF52506008D02D7 = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
 					};
@@ -114,9 +158,20 @@
 			projectRoot = "";
 			targets = (
 				476DBD721FF51AE9008D02D7 /* KaratsubaMultiplication */,
+				476DBD821FF52506008D02D7 /* KaratsubaTests */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		476DBD811FF52506008D02D7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		476DBD6F1FF51AE9008D02D7 /* Sources */ = {
@@ -125,6 +180,15 @@
 			files = (
 				476DBD771FF51AE9008D02D7 /* main.swift in Sources */,
 				476DBD7E1FF51ECB008D02D7 /* MyInt.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		476DBD7F1FF52506008D02D7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				476DBD861FF52506008D02D7 /* KaratsubaTests.swift in Sources */,
+				476DBD8B1FF52578008D02D7 /* MyInt.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -255,6 +319,32 @@
 			};
 			name = Release;
 		};
+		476DBD891FF52506008D02D7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = KaratsubaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.babakhaniants.KaratsubaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		476DBD8A1FF52506008D02D7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = KaratsubaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.babakhaniants.KaratsubaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -272,6 +362,15 @@
 			buildConfigurations = (
 				476DBD7B1FF51AE9008D02D7 /* Debug */,
 				476DBD7C1FF51AE9008D02D7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		476DBD881FF52506008D02D7 /* Build configuration list for PBXNativeTarget "KaratsubaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				476DBD891FF52506008D02D7 /* Debug */,
+				476DBD8A1FF52506008D02D7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
